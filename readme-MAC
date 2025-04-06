@@ -1,0 +1,6 @@
+pip install pyinstaller python-dotenv pandas requests
+pyinstaller --noconsole --windowed --name "FaireStockGUI" \
+  --add-data ".env:." \
+  --add-data "faireOrderFuncs.py" \
+  faire_stock_order_gui.py
+
